@@ -49,7 +49,7 @@ except:
     pass
     
 try:
-    prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=1000000&country=all&ssl=all&anonymity=all').text
+    prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=1000000&country=all&ssl=all&anonymity=all').text
     open('.prox.txt','w').write(prox)
 except Exception as e:
     print('GAGAL')
@@ -63,7 +63,7 @@ U='\033[1;35m' #UNGU
 O='\033[38;2;255;127;0;1m' #ORANGE
 C='\033[0m' #CLEAR
 N = '\x1b[0m' # WARNA MATI
-USN="Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 41.0.0.13.92 Android (24/7.0; 320dpi; 720x1280; samsung; SM-J710F; j7xelte; samsungexynos7870; ru_RU; 103516660)"
+USN="Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.106 Mobile Safari/537.36 Instagram 41.0.0.13.92 Android (24/7.0; 420dpi; 1080x1920; samsung; SM-G935F; hero2lte; samsungexynos8890; ru_RU; 103516666)"
 # USN="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
 ugen=open('ua.txt','r').read().splitlines()
 internal,external,success,checkpoint,loop,following,lisensikuni,lisensiku=[],[],[],[],0,[],[],['sukses']
@@ -428,7 +428,7 @@ class instagram:
             for pw in pas:
                 ts = calendar.timegm(current_GMT)
                 nip=random.choice(prox)
-                proxs= {'http': 'socks4://'+nip}
+                proxs= {'http': 'socks5://'+nip}
                 aa='Mozilla/5.0 (HuaweiBrowser/11.1.3.300 '
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
                 c='HarmonyOS; JKM-AL00b; HMSCore 6.4.0.311'
