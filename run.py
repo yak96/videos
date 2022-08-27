@@ -63,7 +63,7 @@ U='\033[1;35m' #UNGU
 O='\033[38;2;255;127;0;1m' #ORANGE
 C='\033[0m' #CLEAR
 N = '\x1b[0m' # WARNA MATI
-USN="Mozilla/5.0 (Linux; Android 8.0.0; MI 6 Build/OPR1.170623.027; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 40.0.0.14.95 Android (26/8.0.0; 480dpi; 1080x1920; Xiaomi; MI 6; sagit; qcom; uk_UA; 102221279)"
+USN="Mozilla/5.0 (Linux; Android 8.0.0; G3112 Build/48.1.A.0.138; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 Instagram 43.0.0.10.97 Android (26/8.0.0; 320dpi; 720x1184; Sony; G3112; G3112; mt6757; ru_RU; 105842051)"
 # USN="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
 ugen=open('ua.txt','r').read().splitlines()
 internal,external,success,checkpoint,loop,following,lisensikuni,lisensiku=[],[],[],[],0,[],[],['sukses']
@@ -517,7 +517,7 @@ class instagram:
             crf_token=re.findall(r"\"csrf_token\"\:\"(.*?)\"", str(token))[0]
             s.headers.update({
                 'authority': 'www.instagram.com',
-                'x-ig-www-claim': 'hmac.AR3Z_YdqK9oNdrHk8RO50TVdpt1fQ2s5zPacsp7IB5SSUFGQ',
+                'x-ig-www-claim': 'hmac.AR2-XPThmXNYOcI8WYdez1RmtEUjYyKqSAbIEm_9Gn3LWlLG',
                 'x-instagram-ajax': '82a581bb9399',
                 'content-type': 'application/x-www-form-urlencoded',
                 'accept': '*/*',
