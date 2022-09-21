@@ -63,7 +63,7 @@ U='\033[1;35m' #UNGU
 O='\033[38;2;255;127;0;1m' #ORANGE
 C='\033[0m' #CLEAR
 N = '\x1b[0m' # WARNA MATI
-USN="Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36 Instagram 215.0.0.27.359 Android (31/12; 420dpi; 1080x2194; samsung; SM-G991B; o1s; exynos2100; nl_NL; 337202359)"
+USN="Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 216.0.0.12.135 (iPhone12,5; iOS 15_1; ru_UA; ru-UA; scale=3.00; 1242x2688; 338132253)"
 # USN="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
 ugen=open('ua.txt','r').read().splitlines()
 internal,external,success,checkpoint,loop,following,lisensikuni,lisensiku=[],[],[],[],0,[],[],['sukses']
