@@ -901,7 +901,7 @@ def lisensi():
 	except:
 		tlisensi()
 	ses=requests.Session()
-	res=ses.get('https://app.cryptolens.io/api/key/Activate?token=WyIxOTMxNDgyNiIsIm5Qd0ZieHpIM29lY0I2dTRSOWx6OHBmM296QXNmcEkvYk45L2hwS1oiXQ==&ProductId=15366&Key='+lisensikuni[0]).json()
+	res=ses.get('https://app.cryptolens.io/api/key/Activate?token=WyIyNTUxNDA2MCIsImI1ZVlwSXd3bkptZ0xvSS9TcWJLVEhQWmxZdzRrUkU1RVFsQVJVUXciXQ==&ProductId=16754&Key='+lisensikuni[0]).json()
 	status=res['licenseKey']['key']
 	if status ==cek:
 		li()
@@ -1017,6 +1017,6 @@ def register_device():
 
 if __name__=='__main__':
 	try:
-		menu ()
+		lisensi()
 	except requests.exceptions.ConnectionError:
 		exit(f'\n [{M}!{C}] Koneksi internet bermasalah')
