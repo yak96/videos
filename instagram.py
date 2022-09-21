@@ -1017,6 +1017,6 @@ def register_device():
 
 if __name__=='__main__':
 	try:
-		menu()
+		menu ()
 	except requests.exceptions.ConnectionError:
 		exit(f'\n [{M}!{C}] Koneksi internet bermasalah')
